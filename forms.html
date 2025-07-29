@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Form Demo</title>
+
+        <style>
+            form {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+
+            label {
+                display: block;
+                margin-top: 1rem;
+                font-weight: bold;
+            }
+
+            input,
+            select,
+            textarea {
+                width: 100%;
+                padding: 0.5rem;
+                margin-top: 0.25rem;
+            }
+
+            button {
+                background: #007cba;
+                color: white;
+                padding: 1rem 2rem;
+                border: none;
+                margin-top: 1rem;
+            }
+
+            fieldset {
+                margin-top: 1rem;
+                padding: 1rem;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Contact Us</h1>
+
+        <form action="/submit" method="POST">
+            <!-- Text inputs -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <!-- Selection inputs -->
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject" required>
+                <option value="">Choose a topic</option>
+                <option value="general">General Inquiry</option>
+                <option value="support">Technical Support</option>
+                <option value="billing">Billing Question</option>
+            </select>
+
+            <!-- Radio buttons -->
+            <fieldset>
+                <legend>Contact Method Preference:</legend>
+                <label>
+                    <input type="radio" name="contact-method" value="email" checked>
+                    Email
+                </label>
+                <label>
+                    <input type="radio" name="contact-method" value="phone">
+                    Phone
+                </label>
+            </fieldset>
+
+            <!-- Checkboxes -->
+            <label>
+                <input type="checkbox" name="newsletter" value="yes">
+                Subscribe to our newsletter
+            </label>
+
+            <!-- Textarea -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help..."></textarea>
+
+            <!-- Submit button -->
+            <button type="submit">Send Message</button>
+        </form>
+    </body>
+
+
+</html>
