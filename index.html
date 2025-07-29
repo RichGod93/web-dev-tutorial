@@ -4,11 +4,65 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
         <title>Web Dev</title>
     </head>
 
     <body>
+        <!-- Headings - six levels -->
         <h1>Welcome to our tutorial</h1>
+        <h2>Introduction</h2>
+        <h3>What is Web Development?</h3>
+
+        <!-- Text content -->
+        <p>This is a paragraph with <strong>important text</strong> and <em>emphasized text</em>.</p>
+
+        <!-- Lists -->
+        <!-- Unordered List -->
+        <ul>
+            <li>Unordered list item</li>
+            <li>Another item</li>
+        </ul>
+
+        <!-- Ordered List -->
+        <ol>
+            <li>First ordered item</li>
+            <li>Second ordered item</li>
+        </ol>
+
+        <!-- Links and images -->
+        <a href="https://google.com" target="_blank">External link</a>
+        <a href="./updated.html">Updated</a>
+        <a href="#section1">Internal link</a>
+
+        <img src="./img/image.jpg" alt="Descriptive text for screen readers">
+
+        <!-- New semantics -->
+        <div class="header"></div>
+        <div class="nav"></div>
+        <div class="main-content"></div>
+        <div class="sidebar"></div>
+        <div class="footer"></div>
+
+        <!-- New semantics -->
+        <header></header>
+        <nav></nav>
+        <main></main>
+        <aside></aside>
+        <footer></footer>
+
+        <!-- Always associate labels with inputs -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Or wrap inputs -->
+        <label>
+            Phone Number:
+            <input type="tel" name="phone">
+        </label>
+
+
+        <script src="./js/script.js"></script>
     </body>
 
 </html>
